@@ -55,57 +55,17 @@ function VideoThumbnail({ video, onPlay }: { video: Video; onPlay: () => void })
   );
 }
 
-// Player — affiche la cover avec play, lance la vidéo au clic
 function VideoPlayer({ video }: { video: Video }) {
-  const [playing, setPlaying] = useState(false);
-  const [coverError, setCoverError] = useState(false);
-
-  if (playing) {
-    return (
-      <video
-        src={`/videos/${video.id}.mp4`}
-        controls
-        autoPlay
-        playsInline
-        preload="none"
-        className="w-full max-h-[80vh] bg-black block"
-      />
-    );
-  }
-
   return (
-    <button
-      onClick={() => setPlaying(true)}
-      className="relative w-full aspect-video flex items-center justify-center group overflow-hidden bg-black"
-      aria-label="Lancer la vidéo"
-    >
-      {/* Cover */}
-      {!coverError ? (
-        <Image
-          src={`/images/phenomenedeforce.jpg`}
-          alt="Cover vidéo"
-          fill
-          className="object-cover brightness-75 group-hover:brightness-90 transition-all duration-300"
-          onError={() => setCoverError(true)}
-          priority
-        />
-      ) : (
-        <div className="absolute inset-0 bg-zinc-900" />
-      )}
-
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-300" />
-
-      {/* Gros bouton play centré */}
-      <div className="relative z-10 flex flex-col items-center gap-3">
-        <div className="w-20 h-20 border-2 border-white/80 group-hover:border-primary flex items-center justify-center bg-black/50 backdrop-blur-sm transition-all duration-300 group-hover:scale-110">
-          <HugeiconsIcon icon={PlayIcon} size={36} color="#FF4500" />
-        </div>
-        <span className="font-body text-white/70 text-xs tracking-widest uppercase">
-          Lancer la vidéo
-        </span>
-      </div>
-    </button>
+    <video
+      src={`/videos/${video.id}.mp4`}
+      controls
+      autoPlay
+      playsInline
+      preload="metadata"
+      className="w-full max-h-[85vh] bg-black block"
+      style={{ aspectRatio: "9/16", objectFit: "contain" }}
+    />
   );
 }
 
