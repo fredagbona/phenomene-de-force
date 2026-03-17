@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120">
+  <rect width="100" height="120" fill="#0A0A0A"/>
+  <!-- Left ear -->
+  <polygon points="12,36 21,4 32,36" fill="#FF4500"/>
+  <!-- Right ear -->
+  <polygon points="68,36 79,4 88,36" fill="#FF4500"/>
+  <!-- Head -->
+  <polygon points="12,36 88,36 94,58 88,84 66,98 50,104 34,98 12,84 6,58" fill="#FF4500"/>
+  <!-- Left inner ear -->
+  <polygon points="16,34 21,16 28,34" fill="#0A0A0A"/>
+  <!-- Right inner ear -->
+  <polygon points="72,34 79,16 84,34" fill="#0A0A0A"/>
+  <!-- Left eye -->
+  <polygon points="16,62 28,55 32,63 20,70" fill="#0A0A0A"/>
+  <!-- Right eye -->
+  <polygon points="68,55 80,62 76,70 64,63" fill="#0A0A0A"/>
+  <!-- Forehead stripes -->
+  <polygon points="47,38 53,38 52,54 48,54" fill="#0A0A0A"/>
+  <polygon points="35,39 41,39 39,52 34,52" fill="#0A0A0A"/>
+  <polygon points="59,39 65,39 66,52 61,52" fill="#0A0A0A"/>
+  <!-- Nose -->
+  <polygon points="44,82 50,76 56,82 50,88" fill="#0A0A0A"/>
+  <!-- Mouth -->
+  <polygon points="38,92 44,88 50,95 56,88 62,92 58,96 50,90 42,96" fill="#0A0A0A"/>
+</svg>
