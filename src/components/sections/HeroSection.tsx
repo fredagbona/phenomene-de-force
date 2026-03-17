@@ -2,8 +2,6 @@ import { CHECKOUT_URL } from "@/lib/constants";
 import { HugeiconsIcon } from "@hugeicons/react";
 import {
   ArrowDown01Icon,
-  Shield01Icon,
-  Download01Icon,
   Facebook01Icon,
   InstagramIcon,
   ThreadsIcon,
@@ -13,7 +11,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black pb-[4vw]"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black pb-[4vw] pt-16 md:pt-20"
       style={{ clipPath: "polygon(0 0, 100% 0, 100% calc(100% - 4vw), 0 100%)" }}
     >
       {/* Radial glow derrière le titre */}
